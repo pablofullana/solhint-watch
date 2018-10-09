@@ -1,6 +1,6 @@
 {
   "name": "solhint-watch",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Run Solhint with watch mode",
   "main": "index.js",
   "scripts": {
