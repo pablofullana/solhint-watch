@@ -1,0 +1,20 @@
+{
+  "name": "solhint-watch",
+  "version": "0.0.1",
+  "description": "Run Solhint with watch mode",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "solhint",
+    "solidity",
+    "linter",
+    "watch"
+  ],
+  "author": "Pablo M. Fullana",
+  "license": "MIT",
+  "dependencies": {
+    "chokidar": "^2.0.4"
+  }
+}
