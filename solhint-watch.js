@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const chokidar = require('chokidar')
 const spawn = require('child_process').spawn
 const keypress = require('keypress')
@@ -23,7 +25,7 @@ function runSolhint(path) {
   solhint.on('close', (code) => console.log(`Solhint exited with code ${code}`))
 }
 
-function watch(options) {
+function init() {
   chokidar
     .watch(watchDir, chokidarOptions)
     .on(events.add, (path) => runSolhint(path))
@@ -42,4 +44,4 @@ process.stdin.on('keypress', function (ch, key) {
 keypress(process.stdin);
 console.clear()
 console.log('Loaded')
-watch()
+init()
