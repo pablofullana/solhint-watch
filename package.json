@@ -1,10 +1,14 @@
 {
   "name": "solhint-watch",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Run Solhint with watch mode",
-  "main": "index.js",
+  "main": "./solhint-watch.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pablofullana/solhint-watch.git"
   },
   "bin": {
     "solhint-watch": "./solhint-watch.js"
@@ -15,7 +19,10 @@
     "linter",
     "watch"
   ],
-  "author": "Pablo M. Fullana",
+  "author": {
+    "name": "Pablo M. Fullana",
+    "email": "pablofullana@gmail.com"
+  },
   "license": "MIT",
   "dependencies": {
     "chokidar": "^2.0.4",
