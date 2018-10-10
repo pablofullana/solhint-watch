@@ -42,5 +42,4 @@ process.stdin.on('keypress', function (ch, key) {
 
 keypress(process.stdin);
 console.clear()
-console.log('Loaded')
 init()
