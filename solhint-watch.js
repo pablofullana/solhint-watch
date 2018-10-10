@@ -15,7 +15,6 @@ const chokidarOptions = {
   ignoreInitial: true
 };
 
-
 function runSolhint(path) {
   console.clear()
   console.log('Running Solhint on: %s', path)
