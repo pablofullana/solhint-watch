@@ -4,7 +4,7 @@ const spawn = require('child_process').spawn;
 console.log('Loaded');
 
 const solhintBinary = 'solhint'
-const watchDir = '.';
+const watchDir = './**/*.sol'
 const events = {
   add: 'add',
   change: 'change'
