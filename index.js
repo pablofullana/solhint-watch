@@ -18,10 +18,7 @@ function runSolhint(path) {
   console.clear()
   console.log('Running Solhint on: %s', path)
 
-  const solhint = spawn(solhintBinary, [path])
-
-  solhint.stdout.on('data', (data) => console.log(`${data}`))
-  solhint.stderr.on('data', (data) => console.log(`${data}`))
+  const solhint = spawn(solhintBinary, [path], { stdio: 'inherit' })
 
   solhint.on('close', (code) => console.log(`Solhint exited with code ${code}`))
 }
