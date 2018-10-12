@@ -11,7 +11,10 @@ const events = {
   change: 'change'
 }
 const chokidarOptions = {
-  ignored: /\.git|node_modules/,
+  ignored: [
+    '.git/**',
+    '**/node_modules/**'
+  ],
   ignoreInitial: true
 };
 
